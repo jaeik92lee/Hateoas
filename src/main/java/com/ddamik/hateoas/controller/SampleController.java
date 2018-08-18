@@ -14,8 +14,13 @@ public class SampleController {
 
     @GetMapping("/sample")
     public SampleVO makeSample() {
-        SampleVO vo = new SampleVO();
 
+        SampleVO vo = new SampleVO();
+        vo.setVal1("v1");
+        vo.setVal2("v2");
+        vo.setVal3("v3");
+
+        System.out.println(vo.toString());
         return vo;
     }
 }
